@@ -30,6 +30,7 @@ export function getPlatform(): Platform {
 
 export function getOSName(): OS | undefined {
   const os = getPlatform()
+  const ds = 'sss'
   if (os === 'ios' || os === 'android') return os
 
   const platform =
